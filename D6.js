@@ -21,15 +21,15 @@ chain("Questo ", "Funziona");
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random 
   compreso tra 0 e 100 (incluso).
 */
-const rng = () => {
+const rng = function () {
   const myNumbers = [];
 
   for (let i = 0; i < 10; i++) {
-    let casual = Math.random(Math.floor() * 100);
-    myNumbers.push(casual);
+    myNumbers.push(Math.random(Math.floor() * 100));
   }
   return myNumbers;
 };
+rng;
 /* NON FUNZIONA E NON SO PERCHé*/
 /* */
 /* */
@@ -89,16 +89,18 @@ console.log(letters);
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 
-NON FUNZIONA
+NON FUNZIONA*/
 const DISPARI = () => {
+  const array = [];
   for (let i = 0; i < 100; i++) {
     if (i % 2 !== 0) {
-      DISPARI.push[i];
+      array.push[i];
     }
   }
+  return array;
 };
 console.log(DISPARI);
-*/
+
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
   {
